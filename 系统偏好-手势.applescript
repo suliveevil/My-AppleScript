@@ -1,0 +1,12 @@
+---- 系统偏好
+--tell application "System Preferences" to reveal the ¬
+--	anchor named "main" of ¬
+--	pane id "com.apple.preference.general"
+--
+--tell application "System Events" to tell ¬
+--	process "System Preferences" to tell ¬
+--	window "通用" to tell ¬
+--	checkbox "自动隐藏和显示菜单栏" to ¬
+--	perform action "AXPress"
+--
+--quit application "System Preferences"
