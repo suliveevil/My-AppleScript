@@ -1,0 +1,1 @@
+tell application "Finder"	set theFile to the selection	set thePath to POSIX path of (first item of (get selection as alias list) as alias)	set fileName to name of item 1 of theFile	set thefolder to name of parent of (first item of (get selection as alias list) as alias)	set ascriptPath to POSIX file thePath as stringend tell

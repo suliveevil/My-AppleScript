@@ -1,0 +1,1 @@
+use AppleScript version "2.4" -- Yosemite (10.10) or lateruse scripting additions-- 一定要把 QQ 这个应用设置到 frontmost，也就是 focus 到当前的 app 窗口上tell application "QQ" to activatetell application "System Events" to set frontmost of process "QQ" to truetell application "System Events"	keystroke "password"	keystroke returnend tell
