@@ -1,4 +1,5 @@
-[Clean ScreenCapture - Macro Library - Keyboard Maestro Discourse](https://forum.keyboardmaestro.com/t/clean-screencapture/12591/12)
+[Clean ScreenCapture - Macro Library - Keyboard Maestro Discourse](https://forum.keyboardmaestro.com/t/clean-screencapture/12591)
+
 
 ```applescript
 -- Clean ScreenCapture v1.1.0 - German
