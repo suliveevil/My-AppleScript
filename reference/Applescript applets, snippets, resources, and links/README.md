@@ -1,8 +1,6 @@
 Applescript
 ============
 
-Forked from [unforswearing applescript](https://github.com/unforswearing/applescript)
-
 This repository serves as a collection of Applescript snippets that can be used individually or part of a larger project. Many of these snippets were written as I was learning to use Applescript, and may not represent the best method of undertaking a particular task. Feel free to open an issue or pull request if you find that any of these files do not work for you. 
 
 Copies of this repository exist at [Github](https://github.com/unforswearing/applescript ) and [Gitlab](https://gitlab.com/unforswearing/applescript).
