@@ -1,0 +1,1 @@
+tell application "System Preferences" to reveal the ¬	anchor named "displaysDisplayTab" of ¬	pane id "com.apple.preference.general"tell application "System Events" to tell ¬	process "System Preferences" to tell ¬	window 1 to tell ¬	tab group 1 to tell ¬	checkbox "自动隐藏和显示菜单栏" to ¬	perform action "AXPress"quit application "System Preferences"
