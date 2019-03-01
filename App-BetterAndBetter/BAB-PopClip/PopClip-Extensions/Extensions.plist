@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Installed Extensions</key>
+	<array>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.charcount</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>en</key>
+				<string>Character Count</string>
+				<key>fr</key>
+				<string>Nombre de caractères</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>en</key>
+				<string>Character Count</string>
+				<key>fr</key>
+				<string>Nombre de caractères</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>CharCount.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/CharCount.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.dash</string>
+			<key>Extension Name</key>
+			<string>Dash</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Dash</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Dash.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Dash.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.alfred</string>
+			<key>Extension Name</key>
+			<string>Alfred</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Alfred</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Alfred.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Alfred.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.launchbar</string>
+			<key>Extension Name</key>
+			<string>LaunchBar</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>LaunchBar</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>LaunchBar.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/LaunchBar.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.rtc</string>
+			<key>Extension Name</key>
+			<string>Terminal</string>
+			<key>Options</key>
+			<array>
+				<dict>
+					<key>Option Identifier</key>
+					<string>term</string>
+					<key>Option Label</key>
+					<dict>
+						<key>en</key>
+						<string>Terminal Emulator</string>
+					</dict>
+					<key>Option Type</key>
+					<string>multiple</string>
+					<key>Option Values</key>
+					<array>
+						<string>Terminal</string>
+						<string>iTerm2 v2.9+</string>
+						<string>iTerm2</string>
+					</array>
+				</dict>
+			</array>
+			<key>Options Account Title</key>
+			<string>Terminal</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>RunCommand.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/RunCommand.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.unix-time</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>en</key>
+				<string>Unix Time</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>en</key>
+				<string>Unix Time</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>UnixTime.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/UnixTime.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.wordcount</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>en</key>
+				<string>Word Count</string>
+				<key>fr</key>
+				<string>Nombre de mots</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>en</key>
+				<string>Word Count</string>
+				<key>fr</key>
+				<string>Nombre de mots</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>WordCount.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/WordCount.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.wizyoung.google_translate.extension</string>
+			<key>Extension Name</key>
+			<string>Google Translate</string>
+			<key>Options</key>
+			<array>
+				<dict>
+					<key>Option Default Value</key>
+					<string>translate.google.cn</string>
+					<key>Option Identifier</key>
+					<string>site</string>
+					<key>Option Label</key>
+					<string>Google Translate Site</string>
+					<key>Option Type</key>
+					<string>multiple</string>
+					<key>Option Values</key>
+					<array>
+						<string>translate.google.com</string>
+						<string>translate.google.cn</string>
+					</array>
+				</dict>
+				<dict>
+					<key>Option Default Value</key>
+					<string>English</string>
+					<key>Option Identifier</key>
+					<string>destlang</string>
+					<key>Option Label</key>
+					<string>Destination Language</string>
+					<key>Option Type</key>
+					<string>multiple</string>
+					<key>Option Values</key>
+					<array>
+						<string>Armenian</string>
+						<string>Afrikaans</string>
+						<string>Amharic</string>
+						<string>Arabic</string>
+						<string>Azerbaijani</string>
+						<string>Albanian</string>
+						<string>Basque</string>
+						<string>Belarusian</string>
+						<string>Bulgarian</string>
+						<string>Bengali</string>
+						<string>Bosnian</string>
+						<string>Cebuano</string>
+						<string>Chinese_Simplified</string>
+						<string>Chinese_Traditional</string>
+						<string>Corsican</string>
+						<string>Catalan</string>
+						<string>Czech</string>
+						<string>Croatian</string>
+						<string>Chichewa</string>
+						<string>Danish</string>
+						<string>Dutch</string>
+						<string>Esperanto</string>
+						<string>English</string>
+						<string>Estonian</string>
+						<string>Filipino</string>
+						<string>Filipino</string>
+						<string>French</string>
+						<string>Frisian</string>
+						<string>Finnish</string>
+						<string>Gujarati</string>
+						<string>Galician</string>
+						<string>German</string>
+						<string>Greek</string>
+						<string>Georgian</string>
+						<string>Hawaiian</string>
+						<string>Haitian_creole</string>
+						<string>Hungarian</string>
+						<string>Hmong</string>
+						<string>Hindi</string>
+						<string>Hausa</string>
+						<string>Hebrew</string>
+						<string>Hebrew</string>
+						<string>Irish</string>
+						<string>Icelandic</string>
+						<string>Italian</string>
+						<string>Indonesian</string>
+						<string>Igbo</string>
+						<string>Javanese</string>
+						<string>Japanese</string>
+						<string>Kurdish</string>
+						<string>Kazakh</string>
+						<string>Korean</string>
+						<string>Kannada</string>
+						<string>Khmer</string>
+						<string>Kyrgyz</string>
+						<string>Luxembourgish</string>
+						<string>Latin</string>
+						<string>Lao</string>
+						<string>Latvian</string>
+						<string>Lithuanian</string>
+						<string>Malagasy</string>
+						<string>Malayalam</string>
+						<string>Mongolian</string>
+						<string>Maori</string>
+						<string>Macedonian</string>
+						<string>Maltese</string>
+						<string>Malay</string>
+						<string>Marathi</string>
+						<string>Myanmar</string>
+						<string>Norwegian</string>
+						<string>Nepali</string>
+						<string>Pashto</string>
+						<string>Portuguese</string>
+						<string>Punjabi</string>
+						<string>Polish</string>
+						<string>Persian</string>
+						<string>Russian</string>
+						<string>Romanian</string>
+						<string>Scots_gaelic</string>
+						<string>Spanish</string>
+						<string>Swahili</string>
+						<string>Swedish</string>
+						<string>Sundanese</string>
+						<string>Serbian</string>
+						<string>Sesotho</string>
+						<string>Slovak</string>
+						<string>Sinhala</string>
+						<string>Somali</string>
+						<string>Shona</string>
+						<string>Samoan</string>
+						<string>Slovenian</string>
+						<string>Sindhi</string>
+						<string>Turkish</string>
+						<string>Thai</string>
+						<string>Tajik</string>
+						<string>Telugu</string>
+						<string>Tamil</string>
+						<string>Ukrainian</string>
+						<string>Uzbek</string>
+						<string>Urdu</string>
+						<string>Vietnamese</string>
+						<string>Welsh</string>
+						<string>Xhosa</string>
+						<string>Yiddish</string>
+						<string>Yoruba</string>
+						<string>Zulu</string>
+					</array>
+				</dict>
+				<dict>
+					<key>Option Default Value</key>
+					<string>Chinese_Simplified</string>
+					<key>Option Identifier</key>
+					<string>srclang</string>
+					<key>Option Label</key>
+					<string>Source Language</string>
+					<key>Option Type</key>
+					<string>multiple</string>
+					<key>Option Values</key>
+					<array>
+						<string>Armenian</string>
+						<string>Afrikaans</string>
+						<string>Amharic</string>
+						<string>Arabic</string>
+						<string>Azerbaijani</string>
+						<string>Albanian</string>
+						<string>Basque</string>
+						<string>Belarusian</string>
+						<string>Bulgarian</string>
+						<string>Bengali</string>
+						<string>Bosnian</string>
+						<string>Cebuano</string>
+						<string>Chinese_Simplified</string>
+						<string>Chinese_Traditional</string>
+						<string>Corsican</string>
+						<string>Catalan</string>
+						<string>Czech</string>
+						<string>Croatian</string>
+						<string>Chichewa</string>
+						<string>Danish</string>
+						<string>Dutch</string>
+						<string>Esperanto</string>
+						<string>English</string>
+						<string>Estonian</string>
+						<string>Filipino</string>
+						<string>Filipino</string>
+						<string>French</string>
+						<string>Frisian</string>
+						<string>Finnish</string>
+						<string>Gujarati</string>
+						<string>Galician</string>
+						<string>German</string>
+						<string>Greek</string>
+						<string>Georgian</string>
+						<string>Hawaiian</string>
+						<string>Haitian_creole</string>
+						<string>Hungarian</string>
+						<string>Hmong</string>
+						<string>Hindi</string>
+						<string>Hausa</string>
+						<string>Hebrew</string>
+						<string>Hebrew</string>
+						<string>Irish</string>
+						<string>Icelandic</string>
+						<string>Italian</string>
+						<string>Indonesian</string>
+						<string>Igbo</string>
+						<string>Javanese</string>
+						<string>Japanese</string>
+						<string>Kurdish</string>
+						<string>Kazakh</string>
+						<string>Korean</string>
+						<string>Kannada</string>
+						<string>Khmer</string>
+						<string>Kyrgyz</string>
+						<string>Luxembourgish</string>
+						<string>Latin</string>
+						<string>Lao</string>
+						<string>Latvian</string>
+						<string>Lithuanian</string>
+						<string>Malagasy</string>
+						<string>Malayalam</string>
+						<string>Mongolian</string>
+						<string>Maori</string>
+						<string>Macedonian</string>
+						<string>Maltese</string>
+						<string>Malay</string>
+						<string>Marathi</string>
+						<string>Myanmar</string>
+						<string>Norwegian</string>
+						<string>Nepali</string>
+						<string>Pashto</string>
+						<string>Portuguese</string>
+						<string>Punjabi</string>
+						<string>Polish</string>
+						<string>Persian</string>
+						<string>Russian</string>
+						<string>Romanian</string>
+						<string>Scots_gaelic</string>
+						<string>Spanish</string>
+						<string>Swahili</string>
+						<string>Swedish</string>
+						<string>Sundanese</string>
+						<string>Serbian</string>
+						<string>Sesotho</string>
+						<string>Slovak</string>
+						<string>Sinhala</string>
+						<string>Somali</string>
+						<string>Shona</string>
+						<string>Samoan</string>
+						<string>Slovenian</string>
+						<string>Sindhi</string>
+						<string>Turkish</string>
+						<string>Thai</string>
+						<string>Tajik</string>
+						<string>Telugu</string>
+						<string>Tamil</string>
+						<string>Ukrainian</string>
+						<string>Uzbek</string>
+						<string>Urdu</string>
+						<string>Vietnamese</string>
+						<string>Welsh</string>
+						<string>Xhosa</string>
+						<string>Yiddish</string>
+						<string>Yoruba</string>
+						<string>Zulu</string>
+					</array>
+				</dict>
+			</array>
+			<key>Options Account Title</key>
+			<string>Google Translate</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>googletranslate.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/googletranslate.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.snowzjx.popclip.extension.baidu-search</string>
+			<key>Extension Name</key>
+			<string>Baidu</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Baidu</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Baidu.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Baidu.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.bing</string>
+			<key>Extension Name</key>
+			<string>Bing</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Bing</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Bing.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Bing.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.eudic</string>
+			<key>Extension Name</key>
+			<string>Eudic</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Eudic</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Eudic.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Eudic.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.base64</string>
+			<key>Extension Name</key>
+			<string>Base64 Encode</string>
+			<key>Options</key>
+			<array>
+				<dict>
+					<key>Option Identifier</key>
+					<string>variant</string>
+					<key>Option Label</key>
+					<dict>
+						<key>en</key>
+						<string>Base64 Variant</string>
+					</dict>
+					<key>Option Type</key>
+					<string>multiple</string>
+					<key>Option Values</key>
+					<array>
+						<string>Standard (+/)</string>
+						<string>URL Safe (-_)</string>
+					</array>
+				</dict>
+			</array>
+			<key>Options Account Title</key>
+			<string>Base64 Encode</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Base64Encode.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Base64Encode.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.append</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>en</key>
+				<string>Append</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>en</key>
+				<string>Append</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Append.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Append.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.htmlencode</string>
+			<key>Extension Name</key>
+			<string>HTML Encode</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>HTML Encode</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>HTMLEncode.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/HTMLEncode.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.open-in-chrome</string>
+			<key>Extension Name</key>
+			<string>Open in Chrome</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Open in Chrome</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>OpenInChrome.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/OpenInChrome.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.open-in-firefox</string>
+			<key>Extension Name</key>
+			<string>Open in Firefox</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Open in Firefox</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>OpenInFirefox.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/OpenInFirefox.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.sort</string>
+			<key>Extension Name</key>
+			<string>Sort</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Sort</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Sort.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Sort.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.urlencode</string>
+			<key>Extension Name</key>
+			<string>URL Encode</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>URL Encode</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>URLEncode.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/URLEncode.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.open-in-downie</string>
+			<key>Extension Name</key>
+			<string>Downie</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Downie</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Downie.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Downie.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.convert</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>en</key>
+				<string>Convert</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>en</key>
+				<string>Convert</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Convert.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Convert.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.unclutter</string>
+			<key>Extension Name</key>
+			<string>Unclutter</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Unclutter</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Unclutter.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Unclutter.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>com.pilotmoon.popclip.extension.delete</string>
+			<key>Extension Name</key>
+			<dict>
+				<key>en</key>
+				<string>Delete</string>
+				<key>fr</key>
+				<string>Supprimer</string>
+			</dict>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<dict>
+				<key>en</key>
+				<string>Delete</string>
+				<key>fr</key>
+				<string>Supprimer</string>
+			</dict>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Delete.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Delete.popclipext</string>
+		</dict>
+		<dict>
+			<key>Enabled</key>
+			<true/>
+			<key>Extension Identifier</key>
+			<string>at.EternalStorms.Yoink.PopClipExtension</string>
+			<key>Extension Name</key>
+			<string>Yoink</string>
+			<key>Options</key>
+			<array/>
+			<key>Options Account Title</key>
+			<string>Yoink</string>
+			<key>Options Title</key>
+			<string></string>
+			<key>Package Name</key>
+			<string>Yoink.popclipext</string>
+			<key>PackagePath</key>
+			<string>/Users/liveevilsu/Library/Application Support/PopClip/Extensions/Yoink.popclipext</string>
+		</dict>
+	</array>
+	<key>Version</key>
+	<integer>1</integer>
+</dict>
+</plist>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>chromspin.png</string>
+			<key>Requirements</key>
+			<array>
+				<string>httpurls</string>
+			</array>
+			<key>Shell Script File</key>
+			<string>open-in-chrome.sh</string>
+			<key>Title</key>
+			<string>Open in Chrome</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Check Installed</key>
+			<true/>
+			<key>Bundle Identifier</key>
+			<string>com.google.Chrome</string>
+			<key>Link</key>
+			<string>http://www.google.com/chrome</string>
+			<key>Name</key>
+			<string>Google Chrome</string>
+		</dict>
+	</array>
+	<key>Blocked Apps</key>
+	<array>
+		<string>com.google.Chrome</string>
+	</array>
+	<key>Extension Description</key>
+	<string>Open the link in Google Chrome.</string>
+	<key>Extension Identifier</key>
+	<string>com.pilotmoon.popclip.extension.open-in-chrome</string>
+	<key>Extension Name</key>
+	<string>Open in Chrome</string>
+	<key>Version</key>
+	<integer>2</integer>
+</dict>
+</plist>
