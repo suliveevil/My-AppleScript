@@ -1,4 +1,4 @@
-BAB 替换 PopClip 计划：本文件夹下的所有脚本仅适用于 BetterAndBetter.app（当前版本1.6.22）
+BAB 自动跳窗模块 替换 PopClip.app 计划：本文件夹下的所有脚本仅适用于 BetterAndBetter.app（当前版本1.6.22）
 
 timestamp: 1551493270
 
