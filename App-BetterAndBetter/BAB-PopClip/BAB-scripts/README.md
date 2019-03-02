@@ -84,8 +84,21 @@ tell application id "com.eusoft.eudic"
 end tell
 ```
 
+### 印象笔记（yinxiang）
+
+```applescript
+tell application "System Events"
+	tell application id "com.yinxiang.Mac"
+		activate
+		set theNote to create note with text "SelectedText"
+		open note window with theNote
+	end tell
+end tell
+```
 
 ## 自定义脚本-test
+
+### Append
 
 ### Bing 搜索
 
@@ -96,6 +109,29 @@ end tell
 ### HTML Encode
 
 ### URL Encode
+
+### CharCount 字符统计
+
+### WordCount 单词统计
+
+### Convert
+
+### Dash
+
+
+### Downie
+
+### Google Translate 谷歌翻译
+
+### LaunchBar
+
+### Open in Chrome
+
+### Open in FireFox
+
+### Unclutter
+
+### Yoink
 
 ### Sort 排序（多行文本）
 
@@ -112,31 +148,6 @@ end tell
 ```
 
 </details>
-
-
-### CharCount 字符统计
-
-### WordCount 单词统计
-
-### Convert
-
-### Dash
-
-### Append
-
-### Downie
-
-### Google Translate 谷歌翻译
-
-### LaunchBar
-
-### Open in Chrome
-
-### Open in FireFox
-
-### Unclutter
-
-### Yoink
 
 
 
