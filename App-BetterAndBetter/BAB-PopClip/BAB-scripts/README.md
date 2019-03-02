@@ -12,6 +12,20 @@ timestamp: 1551493270
 tell application id "com.runningwithcrayons.Alfred-3" to search "SelectedText"
 ```
 
+## Run Command
+
+```applescript
+tell application "Terminal"
+	activate
+	-- If there are no open windows, open one.
+	if (count of windows) is less than 1 then
+		do script ""
+	end if
+	set theTab to selected tab in first window
+	do script "SelectedText" in theTab
+end tell
+```
+
 ## Baidu 搜索
 
 ## Base64 Encode
