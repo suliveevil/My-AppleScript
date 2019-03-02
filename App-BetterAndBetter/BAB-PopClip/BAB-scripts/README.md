@@ -1,10 +1,48 @@
-# BAB 替换 PopClip 计划
-
-本文件夹下的所有脚本仅适用于 BetterAndBetter.app（当前版本1.6.22）
+BAB 替换 PopClip 计划：本文件夹下的所有脚本仅适用于 BetterAndBetter.app（当前版本1.6.22）
 
 timestamp: 1551493270
 
 [TOC]
+
+   * [BAB 替换 PopClip 计划](#bab-替换-popclip-计划)
+      * [BAB 预设脚本](#bab-预设脚本)
+         * [拷贝（⌘C）](#拷贝c)
+         * [粘贴（⌘V）](#粘贴v)
+         * [粘贴并回车](#粘贴并回车)
+         * [剪切（⌘X）](#剪切x)
+         * [打开链接](#打开链接)
+         * [打开目录（Open Folder）](#打开目录open-folder)
+         * [网盘自动密码](#网盘自动密码)
+         * [翻译](#翻译)
+         * [删除（Delete）](#删除delete)
+         * [重做（⌘Z）](#重做z)
+         * [全选（⌘A）](#全选a)
+         * [在百度中查询](#在百度中查询)
+         * [在终端中执行（Run Command）](#在终端中执行run-command)
+         * [在本页中查询](#在本页中查询)
+      * [自定义脚本](#自定义脚本)
+         * [Alfred 搜索](#alfred-搜索)
+         * [Eudic 欧路词典](#eudic-欧路词典)
+         * [印象笔记（yinxiang）](#印象笔记yinxiang)
+      * [自定义脚本-test](#自定义脚本-test)
+         * [Append](#append)
+         * [Bing 搜索](#bing-搜索)
+         * [Base64 Encode](#base64-encode)
+         * [Base64 Decode](#base64-decode)
+         * [HTML Encode](#html-encode)
+         * [URL Encode](#url-encode)
+         * [CharCount 字符统计](#charcount-字符统计)
+         * [WordCount 单词统计](#wordcount-单词统计)
+         * [Convert](#convert)
+         * [Dash](#dash)
+         * [Downie](#downie)
+         * [Google Translate 谷歌翻译](#google-translate-谷歌翻译)
+         * [LaunchBar](#launchbar)
+         * [Open in Chrome](#open-in-chrome)
+         * [Open in FireFox](#open-in-firefox)
+         * [Unclutter](#unclutter)
+         * [Yoink](#yoink)
+         * [Sort 排序（多行文本）](#sort-排序多行文本)
 
 ## BAB 预设脚本
 
