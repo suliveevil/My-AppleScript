@@ -12,7 +12,7 @@ timestamp: 1551493270
 tell application id "com.runningwithcrayons.Alfred-3" to search "SelectedText"
 ```
 
-## Run Command
+## Run Command 运行命令
 
 ```applescript
 tell application "Terminal"
@@ -28,6 +28,8 @@ end tell
 
 ## Baidu 搜索
 
+## Bing 搜索
+
 ## Base64 Encode
 
 ## Base64 Decode
@@ -36,11 +38,11 @@ end tell
 
 ## URL Encode
 
-## Bing搜索
+## Sort 排序（多行文本）
 
-## CharCount
+## CharCount 字符统计
 
-## WordCount
+## WordCount 单词统计
 
 ## Convert
 
@@ -48,11 +50,13 @@ end tell
 
 ## Delete
 
+## Append
+
 ## Downie
 
-## Eudic
+## Eudic 欧路词典
 
-## Google Translate
+## Google Translate 谷歌翻译
 
 ## LaunchBar
 
