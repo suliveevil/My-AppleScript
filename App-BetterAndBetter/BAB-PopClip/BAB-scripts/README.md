@@ -96,6 +96,10 @@ end tell
 
 ### Sort 排序（多行文本）
 
+```shell
+pbpaste | sort | uniq | pbcopy
+```
+
 ### CharCount 字符统计
 
 ### WordCount 单词统计
