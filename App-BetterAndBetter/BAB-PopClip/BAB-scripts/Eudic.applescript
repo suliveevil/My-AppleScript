@@ -1,1 +1,1 @@
-tell application id "com.eusoft.eudic"	activate	show dic with word "SelectedText"end telltell application "System Events"  tell (first process whose frontmost is true)    set appName to displayed name    set appPath to ((path to frontmost application) as text)  end tellend telltell application appPath  set appID to idend tellreturn ("NAME: " & appName & return & "PATH: " & appPath & return & "ID: " & appID)
+tell application id "com.eusoft.eudic"	reopen	show dic with word "SelectedText"end tell
