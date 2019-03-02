@@ -149,7 +149,7 @@ end tell
 
 ### Bing 搜索
 
--[ ] 待补充
+- [ ] 待补充
 
 ### Base64 Encode
 
