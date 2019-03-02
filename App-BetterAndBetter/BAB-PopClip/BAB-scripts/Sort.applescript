@@ -1,0 +1,1 @@
+tell application "System Events"	do shell script "pbpaste | sort | uniq | pbcopy"end tell
