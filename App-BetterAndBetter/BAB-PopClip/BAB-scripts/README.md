@@ -73,6 +73,15 @@ end tell
 tell application id "com.runningwithcrayons.Alfred-3" to search "SelectedText"
 ```
 
+### Eudic 欧路词典
+
+```applescript
+tell application id "com.eusoft.eudic"
+	reopen
+	show dic with word "SelectedText"
+end tell
+```
+
 ### Bing 搜索
 
 ### Base64 Encode
@@ -97,15 +106,6 @@ tell application id "com.runningwithcrayons.Alfred-3" to search "SelectedText"
 
 ### Downie
 
-### Eudic 欧路词典
-
-```applescript
-tell application id "com.eusoft.eudic"
-	reopen
-	show dic with word "SelectedText"
-end tell
-```
-
 ### Google Translate 谷歌翻译
 
 ### LaunchBar
@@ -117,9 +117,6 @@ end tell
 ### Unclutter
 
 ### Yoink
-
-
-
 
 
 
