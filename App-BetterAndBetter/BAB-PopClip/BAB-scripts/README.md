@@ -88,6 +88,29 @@ open "SelectedText"
 
 ### 在百度中查询
 
+### 在Safari中打开
+
+```applescript
+tell application "Google Chrome"
+	tell window 1
+		make new tab with properties {URL:"http://www.baidu.com/s?wd=SelectedText"}
+	end tell
+	activate
+end tell
+```
+
+### 在Chrome中打开
+
+```applescript
+tell application "Safari"
+	tell window 1
+		set current tab to (make new tab with properties {URL:"http://www.baidu.com/s?wd=SelectedText"})
+	end tell
+	activate
+end tell
+```
+
+
 ### 在终端中执行（Run Command）
 
 <details>
