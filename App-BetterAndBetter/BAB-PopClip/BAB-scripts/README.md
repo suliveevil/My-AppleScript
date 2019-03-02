@@ -96,9 +96,20 @@ end tell
 
 ### Sort 排序（多行文本）
 
-```shell
-pbpaste | sort | uniq | pbcopy
+[Numerically sort clipboard contents - Questions & Suggestions - Keyboard Maestro Discourse](https://forum.keyboardmaestro.com/t/numerically-sort-clipboard-contents/11075)
+
+
+<details>
+<summary>pbpaste</summary>
+
+```applescript
+tell application "System Events"
+	do shell script "pbpaste | sort | uniq | pbcopy"
+end tell
 ```
+
+</details>
+
 
 ### CharCount 字符统计
 
