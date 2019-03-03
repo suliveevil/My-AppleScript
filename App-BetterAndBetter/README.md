@@ -4,4 +4,4 @@
 
 ## 截图增强
 
-[BAB-CleanScreenCapture.applescript](https://www.github.com/suliveevil/AppleScript/tree/master/BAB-CleanScreenCapture.applescript)
+[BAB-CleanScreenCapture.applescript](https://github.com/suliveevil/AppleScript/blob/master/App-BetterAndBetter/BAB-CleanScreenCapture.applescript)
