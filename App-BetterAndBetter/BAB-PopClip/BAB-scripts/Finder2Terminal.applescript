@@ -1,0 +1,1 @@
+tell application "Finder" to get the ¬	quoted form of the ¬	POSIX path of the ¬	(insertion location as text)set shellCmd to "cd " & resulttell application "Terminal" to tell the front window ¬	to do script shellCmd in ¬	the selected tab
