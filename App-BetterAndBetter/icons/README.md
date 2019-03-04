@@ -23,3 +23,6 @@ BAB 自动跳窗模块 插件 icons
 ## shanchu 删除
 
 ## Yoink
+
+## BaiduNetdisk_mac 百度网盘
+
