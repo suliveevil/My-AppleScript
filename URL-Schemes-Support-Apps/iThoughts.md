@@ -1,0 +1,1 @@
+https://www.toketaware.com/ithoughts-howto-x-callback-url
