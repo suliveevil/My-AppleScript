@@ -1,0 +1,1 @@
+tell application id "org.sunjw.fHashMacUI"	activateend tell
