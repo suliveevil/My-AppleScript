@@ -8,7 +8,7 @@
 
 [BAB-AlfredSearch.applescript](https://github.com/suliveevil/AppleScript/blob/master/App-BetterAndBetter/BAB-AlfredSearch.applescript)
 
-### 印象笔记
+### 印象笔记 Send2EverNote
 
 [BAB-Send2EverNote.applescript](https://github.com/suliveevil/AppleScript/blob/master/App-BetterAndBetter/BAB-Send2EverNote.applescript)
 
@@ -16,7 +16,7 @@
 ### Say
 
 
-## 测试中的脚本
+## 测试中的 BAB 专用脚本
 
 ### 字符、行数统计
 
