@@ -1,0 +1,1 @@
+tell application "System Events"	-- tell application id "com.apple.finder"	tell application "Finder"		set theItems to selection		set filePath to (POSIX path of (the selection as alias))	end tell	set the clipboard to filePath	do shell script "touch /tmp/bab.rtf;open -a Yoink $path"end tell
