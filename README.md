@@ -1,6 +1,6 @@
 # AppleScript
 
-AppleScript 相关
+AppleScript 相关，还有部分 shell scripts。
 
 [TOC]
 
