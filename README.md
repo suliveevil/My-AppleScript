@@ -42,6 +42,14 @@ end tell
 
 ### [Smile companion osax](http://www.satimage.fr/software/en/downloads/downloads_companion_osaxen.html)
 
+## Books
+
+### AppleScript 1 2 3
+
+### Learn AppleScript
+
+
+
 
 ## 参考资料
 
