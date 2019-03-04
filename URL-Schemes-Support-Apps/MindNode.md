@@ -1,0 +1,1 @@
+https://mindnode.com/support/userguides/ios/automation
