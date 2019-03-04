@@ -2,7 +2,6 @@
 
 [TOC]
 
-
 ## 脚本
 
 ### Alfred 搜索
@@ -17,7 +16,11 @@
 
 [BAB-Send2EverNote.applescript](https://github.com/suliveevil/AppleScript/blob/master/App-BetterAndBetter/BAB-Send2EverNote.applescript)
 
-## test
+
+### Say
+
+
+## 测试中的脚本
 
 ### 字符、行数统计
 
