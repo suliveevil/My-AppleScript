@@ -1,0 +1,1 @@
+tell application "System Events"	tell application "Finder"		set finderSelection to selection as alias list	end tell	if finderSelection ≠ {} then		-- tell application "fHash"		tell application id "org.sunjw.fHashMacUI"			activate			open finderSelection		end tell	end ifend tell
