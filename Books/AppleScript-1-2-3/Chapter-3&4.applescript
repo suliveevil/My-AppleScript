@@ -1,4 +1,4 @@
-﻿-- UNIX POSIX
+-- UNIX POSIX
 --tell application "Finder"
 --	get the POSIX path of (folder "Nutstore Files" of home as alias)
 --end tell
@@ -63,7 +63,31 @@
 --	end repeat
 --end tell
 
+tell application "Finder"
 
+	-- generate a list of file references sorted by size
+	set these_items to sort (get every document file ¬
+		of the front Finder window) by physical size
+	
+	-- generate a list of names
+	set these_names to {}
+	repeat with i from 1 to the count of these_items
+		set the end of these_names to ¬
+			the name of (item i of these_items)
+	end repeat
+end tell
+
+-- convert the list of names to a paragraph-delimited text block
+set AppleScript's text item delimiters to return
+set the item_list to these_names as string
+set AppleScript's text item delimiters to {""}
+
+-- make a new document with the text
+tell application "TextEdit"
+	activate
+	make new document
+	set text of document 1 to the item_list
+end tell
 
 
 
