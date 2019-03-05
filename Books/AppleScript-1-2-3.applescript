@@ -104,7 +104,19 @@
 --	end tell
 --end tell
 
-
+--tell application "Finder"
+--	tell the front Finder window
+--		set current view to icon view
+--		set toolbar visible to true
+--		set statusbar visible to true
+--		set sidebar width to 135
+--		set zoomed to false
+--		set collapsed to false
+--		set bounds to {22, 66, 700, 600}
+--		set target to (path to documents folder)
+--		set index to 1
+--	end tell
+--end tell
 
 
 
