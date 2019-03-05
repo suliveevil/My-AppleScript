@@ -58,8 +58,9 @@
 -- 
 -- tell application "Finder" to select the last Finder window
 
--- bundle ID
+-- bundle ID、URL schemes
 -- get id of application "Finder"
+-- get URLSchemes of application id "com.yinxiang.Mac"
 
 -- Safari
 -- tell application "Safari" to close every window
@@ -117,6 +118,20 @@
 --		set index to 1
 --	end tell
 --end tell
+
+-- 新建文件
+--tell application "Finder"
+--	activate
+--	make new document file at folder "Vim" of desktop ¬
+--		with properties {name:"My Text Document.md"}
+--end tell
+
+-- 新建文件软连接
+tell application "Finder"
+	activate
+	make new document file at folder "Vim" of desktop ¬
+		with properties {name:"My Text Document.md"}
+end tell
 
 
 
