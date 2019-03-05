@@ -129,8 +129,10 @@
 -- 新建文件软连接
 tell application "Finder"
 	activate
-	make new document file at folder "Vim" of desktop ¬
-		with properties {name:"My Text Document.md"}
+	make new alias file ¬
+		at folder "Vim" of desktop ¬
+		to folder "Applications" of startup disk ¬
+		with properties {name:"Applications Link"}
 end tell
 
 
