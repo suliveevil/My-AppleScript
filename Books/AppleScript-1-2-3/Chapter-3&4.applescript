@@ -63,38 +63,97 @@
 --	end repeat
 --end tell
 
--- 把文件夹内所有文件
-tell application "System Events"
-	tell application "Finder"
-		
-		-- generate a list of file references sorted by name/creation time/size
-		set these_items to sort (get every document file ¬
-			of the front Finder window) by size
-		
-		-- generate a list of names
-		set these_names to {}
-		repeat with i from 1 to the count of these_items
-			set the end of these_names to ¬
-				the name of (item i of these_items)
-		end repeat
-	end tell
-	
-	-- convert the list of names to a paragraph-delimited text block
-	set AppleScript's text item delimiters to return
-	set the item_list to these_names as string
-	set AppleScript's text item delimiters to {""}
-	
-	-- make a new document with the text
-	tell application "TextEdit"
-		activate
-		make new document
-		set text of document 1 to the item_list
-	end tell
-end tell
+-- 提取文件夹内所有文件的文件名
+--tell application "System Events"
+--	tell application "Finder"
+--		
+--		-- generate a list of file references sorted by name/creation time/size
+--		set these_items to sort (get every document file ¬
+--			of the front Finder window) by size
+--		
+--		-- generate a list of names
+--		set these_names to {}
+--		repeat with i from 1 to the count of these_items
+--			set the end of these_names to ¬
+--				the name of (item i of these_items)
+--		end repeat
+--	end tell
+--	
+--	-- convert the list of names to a paragraph-delimited text block
+--	set AppleScript's text item delimiters to return
+--	set the item_list to these_names as string
+--	set AppleScript's text item delimiters to {""}
+--	
+--	-- make a new document with the text
+--	tell application "TextEdit"
+--		activate
+--		make new document
+--		set text of document 1 to the item_list
+--	end tell
+--end tell
+
+-- 提取文件夹内所有文件的文件名-倒序
+--tell application "Finder"
+--	
+--	-- generate a list of file references sorted by size
+--	set these_items to sort (get every document file ¬
+--		of the front Finder window) by name
+--	
+--	-- reverse the order of the list of references
+--	set these_items to the reverse of these_items
+--	
+--	-- generate a list of names
+--	set these_names to {}
+--	repeat with i from 1 to the count of these_items
+--		set the end of these_names to ¬
+--			the name of (item i of these_items)
+--	end repeat
+--end tell
+--
+---- convert the list to paragraph-delimited text
+--set AppleScript's text item delimiters to return
+--set the item_list to these_names as string
+--set AppleScript's text item delimiters to ""
+--
+---- make a new outgoing message with the text
+--tell application "Mail"
+--	set this_message to make new outgoing message
+--	tell this_message
+--		set content to the item_list
+--		set visible to true
+--	end tell
+--end tell
 
 
-
-
+-- 批量创建文件夹
+--tell application "Finder"
+--	
+--	-- get reference to folder whose contents are shown in the window
+--	set the target_folder to the target of front Finder window
+--	
+--	-- make a set of folders, one for each month
+--	set the month_titles to ¬
+--		{"01 January", "02 February", "03 March", "04 April", "05 May", "06 June", "07 July", "08 August", "09 September", "10 October", "11 November", "12 December"}
+--	repeat with i from 1 to 12
+--		set the month_title to (item i of month_titles)
+--		if not (exists folder month_title of the target_folder) then
+--			make new folder at the target_folder ¬
+--				with properties {name:month_title}
+--		end if
+--	end repeat
+--	
+--	-- find the documents in the folder
+--	set these_files to (every document file of the target_folder)
+--	
+--	-- move each document to its corresponding folder
+--	repeat with i from 1 to the count of these_files
+--		set this_file to item i of these_files
+--		set the creation_month to ¬
+--			(the month of (get creation date of this_file)) as string
+--		move this_file to (the first folder of the target_folder ¬
+--			whose name ends with the creation_month)
+--	end repeat
+--end tell
 
 
 
