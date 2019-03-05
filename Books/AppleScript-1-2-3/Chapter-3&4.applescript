@@ -63,14 +63,13 @@
 --	end repeat
 --end tell
 
-
 -- 把文件夹内所有文件
 tell application "System Events"
 	tell application "Finder"
 		
 		-- generate a list of file references sorted by name/creation time/size
 		set these_items to sort (get every document file ¬
-			of the front Finder window) by name
+			of the front Finder window) by size
 		
 		-- generate a list of names
 		set these_names to {}
