@@ -124,7 +124,6 @@
 --	end tell
 --end tell
 
-
 -- 批量创建文件夹
 --tell application "Finder"
 --	
@@ -155,6 +154,44 @@
 --	end repeat
 --end tell
 
+-- 查看文件夹
+--tell application "Finder"
+--	
+--	-- get reference to folder whose contents are displayed in window
+--	set the target_folder to the target of front Finder window
+--	
+--	-- generate a list of references to folders displayed in window
+--	set these_folders to every folder of the target_folder
+--	
+--	-- count the number of items in each folder and add to comment
+--	repeat with i from 1 to the count of these_folders
+--		set this_folder to item i of these_folders
+--		if the name of this_folder is not "Movies" then
+--			set the item_count to the count of document files ¬
+--				of the entire contents of this_folder
+--			set the comment of this_folder to ¬
+--				(item_count & space & "images") as string
+--		end if
+--	end repeat
+--	
+--	-- make comments visible in front window
+--	tell list view options of the front Finder window
+--		set properties to {calculates folder sizes:false, shows icon preview:false, icon size:large icon, text size:12, uses relative dates:true, sort column:name column}
+--		
+--		tell column name column
+--			set its width to 180
+--		end tell
+--		tell column comment column
+--			
+--			set properties to ¬
+--				{index:2, sort direction:normal, width:100, visible:true}
+--			
+--		end tell
+--	end tell
+--	tell the front Finder window
+--		set the current view to list view
+--	end tell
+--end tell
 
 
 
