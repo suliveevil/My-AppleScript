@@ -726,28 +726,34 @@
 --end tell
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 -- Chapter 24
 
+--
+--say "Hello."
+--delay 1
+--say "What is your name?"
 
+--
+--tell application "Safari"
+--	set the URL of the front document to "http://www.apple.com/cn/"
+--	set this_data to the text of document 1
+--end tell
 
+--
+--tell application "Safari"
+--	set the URL of the front document to "http://www.cnn.com/"
+--	delay 1 -- let the page begin to load before checking
+--	repeat
+--		-- use Safari's 'do JavaScript' to check a page's status
+--		if (do JavaScript "document.readyState" in document 1) ¬
+--			is "complete" then exit repeat
+--		delay 1 -- wait a second before checking again
+--	end repeat
+--	beep
+--	set this_data to the text of document 1
+--end tell
 
-
-
-
-
+--
 
 
 
