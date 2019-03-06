@@ -754,22 +754,157 @@
 --end tell
 
 --
+--tell application "Safari"
+--	set the URL of the front document to "http://www.cnn.com/"
+--	delay 1 -- let the page begin to load before checking
+--	repeat with i from 1 to 60 -- the number of times to check
+--		if (do JavaScript "document.readyState" in document 1) ¬
+--			is "complete" then
+--			exit repeat
+--		else if i is 60 then -- there was a problem loading the page
+--			error number -128
+--		else
+--			delay 1
+--		end if
+--	end repeat
+--	beep
+--	set this_data to the text of document 1
+--end tell
+
+--do shell script "date +'%Y-%m-%d-%H:%M:%S'"
 
 
-
-
-
-
-
-
-
-
-
+--
+--global date_string
+--activate
+--display dialog "Movie Builder" buttons {"Quit", "Start"} default button 2
+--if the button returned of the result is "Quit" then
+--    tell me to quit
+--end if
+---- get the current date and time as a numeric text string
+--set the date_string to (do shell script "date +'%m%d%y'")
+---- returns current date without delimiters: 051203
+--on idle
+--try
+--set the target_times to {60} -- 12:01 AM
+--set the current_time to ¬
+--    ((time of the (current date)) div 60) * 60
+--if the current_time is in the target_times then
+--    -- get the path to the applet
+--    set this_app to the path to me
+--    tell application "Finder"
+--        -- get the location of the folder containing this applet
+--        set parent_folder to the container of this_app
+--        -- Look for a folder containing the day's images
+--        if not ¬
+--            (exists folder date_string of parent_folder) then
+--            error "no source folder found"
+--        end if
+--        set the source_folder to ¬
+--            (folder date_string of the parent_folder)
+--        set the source_image to ¬
+--            (the first file of source_folder whose ¬
+--                file type is "JPEG" or ¬
+--                name extension is "jpg") as alias
+--    end tell
+--    tell application "QuickTime Player"
+--        activate
+--        stop every document
+--                close every document saving no
+--                open image sequence source_image frames per second 6
+--                tell document 1
+--                    if not (exists annotation "Full Name") then
+--                        make new annotation with properties ¬
+--                            {name:"Full Name", full text:¬
+--                                (date_string & space & "Time Lapse")}
+--                    else
+--                        set the full text of annotation "Full Name" to ¬
+--                            (date_string & space & "Time Lapse")
+--                    end if
+--                end tell
+--                set the new_file to ¬
+--                    ((source_folder as string) & ¬
+--                        date_string & ".mov")
+--                save document 1 in file new_file as self contained
+--                close document 1 saving no
+--            end tell
+--            -- delay until the target minute has passed
+--            repeat
+--                set this_time to ¬
+--                    (((the time of the (current date)) div 60) * 60)
+--                if this_time is not the current_time then exit repeat
+--                delay 10
+--            end repeat
+--            -- reset the stored date string to the new day
+--            set the date_string to (do shell script "date +'%m%d%y'")
+--        end if
+--    on error error_message
+--        display dialog error_message buttons ¬
+--            {"Quit"} default button 1 giving up after 120
+--        tell me to quit
+--end try
+--    return 45
+--end idle
 
 
 -- Chapter 25
 
 --
+--display dialog ¬
+--	"Enter the amount and choose the temperature system:" default answer ¬
+--	"" buttons {"Kelvin", "Celsius", "Fahrenheit"} default button 3
+--copy the result as list to {text_returned, button_pressed}
+--set the default_value to the text_returned as number
+--if the button_pressed is "Kelvin" then
+--	set the dialog_message to ¬
+--		("Kelvin: " & default_value & return & ¬
+--			"Fahrenheit: " & (default_value as degrees Kelvin ¬
+--			as degrees Fahrenheit as number) as string) & return & ¬
+--		"Celsius: " & (default_value as degrees Kelvin ¬
+--		as degrees Celsius as number) as string
+--else if the button_pressed is "Celsius" then
+--	set the dialog_message to ¬
+--		("Celsius: " & default_value & return & ¬
+--			"Fahrenheit: " & (default_value as degrees Celsius ¬
+--			as degrees Fahrenheit as number) as string) & return & ¬
+--		"Kelvin: " & (default_value as degrees Celsius ¬
+--		as degrees Kelvin as number) as string
+--else
+--	set the dialog_message to ¬
+--		("Fahrenheit: " & default_value & return & ¬
+--			"Kelvin: " & (default_value as degrees Fahrenheit ¬
+--			as degrees Kelvin as number) as string) & return & ¬
+--		"Celsius: " & (default_value as degrees Fahrenheit ¬
+--		as degrees Celsius as number) as string
+--end if
+--display dialog dialog_message buttons {"OK"} default button 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
