@@ -84,6 +84,22 @@
 --	return result
 --end get_input
 
+--
+--get_input()
+--display dialog "You chose " & button returned of result
+--on get_input()
+--	display dialog ("Create or view a playlist of all the tunes") ¬
+--		& (" in your iTunes library having a common theme.") ¬
+--		& return & return ¬
+--		& ("Enter the theme as a word or phrase:") ¬
+--		default answer "" buttons {"Cancel", "View", "Create"} ¬
+--		default button "Create"
+--	return result
+--end get_input
+
+-- Chapter 17
+
+--
 
 
 
