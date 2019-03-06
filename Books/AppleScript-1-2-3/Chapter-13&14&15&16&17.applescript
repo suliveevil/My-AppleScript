@@ -120,12 +120,103 @@ set the reversed_string to the reversed_list as string
 -- text 1 thru -x of "car.01.jpeg"
 --> returns: "car.01"
 
+-- 字符替换
+--set this_greeting to "Thank you [[CUST]] for trying our products!"
+--set AppleScript's text item delimiters to "[[CUST]]"
+--set these_items to the text items of this_greeting
+--set AppleScript's text item delimiters to "Sal"
+--set this_greeting to these_items as string
+--set AppleScript's text item delimiters to {""}
+--return this_greeting
 
+-- 字符替换
+--set this_greeting to "Thank you [[CUST]] for trying our products!"
+--set this_greeting to replace_text(this_greeting, "[[CUST]]", "Bob")
+--
+--on replace_text(this_text, search_string, replacement_string)
+--	set AppleScript's text item delimiters to the search_string
+--	set the item_list to every text item of this_text
+--	set AppleScript's text item delimiters to the replacement_string
+--	set this_text to the item_list as string
+--	set AppleScript's text item delimiters to {""}
+--	return this_text
+--end replace_text
 
+--Find/Change Limitations
+--set this_greeting to "Thank you [[CUST]] for trying our products!"
+--set this_greeting to replace_text(this_greeting, "[[CUST]]", "Bob")
+--
+--on replace_text(this_text, search_string, replacement_string)
+--	set AppleScript's text item delimiters to the search_string
+--	set the item_list to every text item of this_text
+--	set AppleScript's text item delimiters to the replacement_string
+--	set this_text to the item_list as string
+--	set AppleScript's text item delimiters to {""}
+--	return this_text
+--end replace_text
+--set this_text to "Is one plus one the same as one times one?"
+--set the new_string to my replace_text(this_text, "one", "two")
+--set this_string to "If someone adds one plus one, what is the result?"
+--my replace_text(this_string, "one", "two")
 
+--
+--tell application "Safari"
+--	activate
+--	-- get the URL of the front window
+--	set this_URL to URL of document 1
+--	set AppleScript's text item delimiters to {"/"}
+--	set the image_name to the last text item of this_URL
+--	set AppleScript's text item delimiters to {""}
+--	set the target_path to ¬
+--		((path to desktop) as string) & the image_name
+--	save document 1 in file target_path
+--end tell
 
+-- 新建文件
+--tell application "TextEdit"
+--	activate
+--	make new document at the beginning of documents
+--	set the text of the front document to ¬
+--		"Once upon a time in a village far far away lived a man and his dog." & return & "Every day the man and his dog would walk from their house by the ocean down to the beach." & return & "One day while strolling the sandy beach, the pair came upon a silver dollar gleaming in the afternoon sun."
+--end tell
 
+--
+--tell application "TextEdit"
+--	activate
+--	tell the text of the front document
+--		set the font to "Arial"
+--		set the size to 17
+--	end tell
+--end tell
 
+-- 改变大小写
+--set this_string to "THE QUICK BROWN FOX JUMPED OVER THE LAZY DOG."
+---- convert to lower case
+--set the changed_string to ""
+--repeat with i from 1 to the length of this_string
+--	set this_character to character i of this_string
+--	set this_number to (ASCII number this_character)
+--	if this_number is greater than or equal to 65 and ¬
+--		this_number is less than or equal to 90 then
+--		set this_character to (ASCII character (this_number + 32))
+--	end if
+--	set the changed_string to the changed_string & this_character
+--end repeat
+--return the changed_string
+
+-- convert to upper case
+--set this_string to "The quick brown fox jumped over the lazy dog."
+--set the changed_string to ""
+--repeat with i from 1 to the length of this_string
+--	set this_character to character i of this_string
+--	set this_number to (ASCII number this_character)
+--	if this_number is greater than or equal to 97 and ¬
+--		this_number is less than or equal to 122 then
+--		set this_character to (ASCII character (this_number - 32))
+--	end if
+--	set the changed_string to the changed_string & this_character
+--end repeat
+--return the changed_string
 
 
 
