@@ -1,0 +1,1 @@
+on run {input, parameters}	repeat with inputFile in input		tell application "BBEdit"			set theDocument to open inputFile						set encoding of theDocument to "Unicode (UTF-8)"			save theDocument			close theDocument		end tell	end repeatend run
