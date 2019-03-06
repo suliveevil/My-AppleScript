@@ -99,12 +99,26 @@
 
 -- Chapter 17
 
+-- word count 字符统计
+-- get the count of the characters of "folder"
+
 --
+-- "I love Macs." & space & "They are my favorite computers."
 
+-- 反转字符顺序
+set the char_list to every character of "汽车car.01.jpeg"
+set the reversed_list to the reverse of the char_list
+set the reversed_string to the reversed_list as string
 
+--
+-- set x to the offset of "." in the reversed_string
+--> returns: 5
+-- add 1 to compensate for the first character of the search string set x to x + 1
+-- use the result as a negative offset value
 
-
-
+--
+-- text 1 thru -x of "car.01.jpeg"
+--> returns: "car.01"
 
 
 
