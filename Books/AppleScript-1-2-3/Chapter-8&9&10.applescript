@@ -304,10 +304,40 @@
 --end tell
 
 -- say 如果要制定发音，需要在系统偏好设置-辅助功能-语音-系统声音-自定 中提前下载特定发音
-say "Hi! I'm your computer. I've been waiting for someone to talk to!" using "Samantha"
+-- say "Hi! I'm your computer. I've been waiting for someone to talk to!" using "Samantha"
 
+-- say 的应用
+--tell application "Finder"
+--	activate
+--	set this_folder to ¬
+--		choose folder with prompt "Pick a folder to process:"
+--	set these_items to every file of this_folder whose ¬
+--		kind is "JPEG image"
+--	if these_items is {} then
+--		say "The chosen folder contains no images."
+--	else
+--		set the image_count to the count of these_items
+--		say "Beginning processing " & image_count & ¬
+--			" images."
+--		delay 1
+--		repeat with i from 1 to the image_count
+--			say "Processing image " & (i as string)
+--			-- ADD YOUR PROCESSING STATEMENTS HERE
+--		end repeat
+--	end if
+--end tell
 
-
+-- 把文本转换为语音
+--set this_string to "AppleScript and speech work well together!"
+--set the target_file to ¬
+--	choose file name with prompt ¬
+--		("Name and location for the sound file:") ¬
+--			default name "example.aiff"
+--say this_string using "Samantha" saving to the target_file
+--tell application "QuickTime Player"
+--	activate
+--	open the target_file
+--end tell
 
 
 
