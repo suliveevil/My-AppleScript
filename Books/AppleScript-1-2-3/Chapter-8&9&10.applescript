@@ -277,28 +277,34 @@
 -- set this_color to choose color
 
 -- 转换颜色格式 RGB2HTML
-set the HTML_tag to my RGB2HTML(choose color)
---> returns: "#FF8000"
-on RGB2HTML(RGB_values)
-	-- NOTE: this subroutine expects RGB values from 0 to 65535
-	set the hex_list to ¬
-		{"0", "1", "2", "3", "4", "5", "6", "7", "8", ¬
-			"9", "A", "B", "C", "D", "E", "F"}
-	set the hex_value to ""
-	repeat with i from 1 to the count of the RGB_values
-		set this_value to (item i of the RGB_values) div 256
-		if this_value is 256 then set this_value to 255
-		set x to ¬
-			item ((this_value div 16) + 1) of the hex_list
-		set y to ¬
-			item (((this_value / 16 mod 1) * 16) + 1) of hex_list
-		set the hex_value to (the hex_value & x & y) as string
-	end repeat
-	return ("#" & the hex_value) as string
-end RGB2HTML
+--set the HTML_tag to my RGB2HTML(choose color)
+----> returns: "#FF8000"
+--on RGB2HTML(RGB_values)
+--	-- NOTE: this subroutine expects RGB values from 0 to 65535
+--	set the hex_list to ¬
+--		{"0", "1", "2", "3", "4", "5", "6", "7", "8", ¬
+--			"9", "A", "B", "C", "D", "E", "F"}
+--	set the hex_value to ""
+--	repeat with i from 1 to the count of the RGB_values
+--		set this_value to (item i of the RGB_values) div 256
+--		if this_value is 256 then set this_value to 255
+--		set x to ¬
+--			item ((this_value div 16) + 1) of the hex_list
+--		set y to ¬
+--			item (((this_value / 16 mod 1) * 16) + 1) of hex_list
+--		set the hex_value to (the hex_value & x & y) as string
+--	end repeat
+--	return ("#" & the hex_value) as string
+--end RGB2HTML
 
+-- 系统偏好设置
+--tell application "System Preferences"
+--	activate
+--	set the current pane to pane "com.apple.preference.speech"
+--end tell
 
-
+-- say 如果要制定发音，需要在系统偏好设置-辅助功能-语音-系统声音-自定 中提前下载特定发音
+say "Hi! I'm your computer. I've been waiting for someone to talk to!" using "Samantha"
 
 
 
