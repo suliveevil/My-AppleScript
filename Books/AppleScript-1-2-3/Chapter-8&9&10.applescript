@@ -339,12 +339,46 @@
 --	open the target_file
 --end tell
 
+--
+--say ("Attention, you've just received a call from Bob.") ¬
+--	displaying "Bob wants to talk to you."
 
+-- listen: 代码过时了，需要更新
+--tell application id "com.apple.speech.recognitionserver"
+--    set user_response to listen for {"Sal", "Sue", "Bob", "Wanda"} ¬
+--        with prompt "Who's your friend?"
+--end tell
+--say the user_response & " is my friend too!"
 
+-- listen: 代码过时了，需要更新
+--set my_friends to {"Sal", "Sue", "Bob", "Wanda"}
+--set the user_response to ¬
+--	voice_query("Who's your friend?", my_friends, 30)
+--if the user_response is false then error number -128
+--say user_response & " is my friend too!"
+--on voice_query(user_prompt, these_items, timeout_value)
+--	set the cancel_commands to {"Cancel"}
+--	set the match_items to cancel_commands & these_items
+--	try
+--		tell application "SpeechRecognitionServer"
+--			set the user_response to listen for match_items ¬
+--				with prompt user_prompt ¬
+--				giving up after timeout_value ¬
+--				displaying these_items
+--		end tell
+--		if the user_response is in the cancel_commands then
+--			error "user cancelled"
+--		end if
+--		return user_response
+--	on error
+--		return false
+--	end try
+--end voice_query
 
-
-
-
+-- if 语句
+--set winner to "7"
+--display dialog "Pick a number from 1 to 10:" default answer ""
+--if (text returned of result) is winner then beep
 
 
 
