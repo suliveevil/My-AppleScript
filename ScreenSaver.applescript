@@ -1,0 +1,1 @@
+tell application "System Events" to start current screen saver
