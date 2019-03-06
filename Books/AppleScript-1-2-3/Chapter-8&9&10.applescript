@@ -380,7 +380,30 @@
 --display dialog "Pick a number from 1 to 10:" default answer ""
 --if (text returned of result) is winner then beep
 
+-- if
+--set winner to "7"
+--display dialog "Pick a number from 1 to 10:" default answer ""
+--if (text returned of result) is winner then
+--	beep
+--	display dialog "You guessed it!"
+--	beep
+--end if
 
+--
+--display dialog "What's your favorite number?" default answer ""
+--set answer to text returned of result
+--if answer is "1" then
+--	set response to "One is singular and odd."
+--else if answer is "2" then
+--	set response to "Two is plural and even."
+--else if answer is "3" then
+--	set response to "Three's a crowd."
+--else if answer is "4" then
+--	set response to "I can barely count to four."
+--else
+--	set response to "I'm speechless."
+--end if
+--display dialog response buttons {"OK"} default button "OK"
 
 
 
