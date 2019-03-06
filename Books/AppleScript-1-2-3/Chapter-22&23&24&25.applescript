@@ -1,0 +1,316 @@
+-- Chapter 22
+
+--set this_file to choose file without invisibles
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- extract the property value
+--		copy the resolution of this_image to {H_res, V_res}
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--	display dialog "Resolution: " & (H_res as string)
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- extract the properties record
+--		set the props_rec to the properties of this_image
+--		-- purge the open image data
+--		close this_image
+--		-- extract the property values from the record
+--		set the image_info to ""
+--		set the image_info to the image_info & ¬
+--			"Name: " & (name of props_rec) & return
+--		set the image_info to the image_info & ¬
+--			"File: " & (path of image file of props_rec) & return
+--		set the image_info to the image_info & ¬
+--			"Location: " & (path of location of props_rec) & return
+--		set the image_info to the image_info & ¬
+--			"File Type: " & (file type of props_rec) & return
+--		set the image_info to the image_info & ¬
+--			"Bit Depth: " & (bit depth of props_rec) & return
+--		set the image_info to the image_info & ¬
+--			"Res: " & item 1 of (resolution of props_rec) & return
+--		set the image_info to the image_info & ¬
+--			"Color Space: " & (color space of props_rec) & return
+--		copy (dimensions of props_rec) to {X, Y}
+--		set the image_info to the image_info & ¬
+--			"Dimemsions: " & X & ", " & Y
+--	end tell
+--	display dialog image_info
+--on error error_message
+--	display dialog error_message
+--end try
+
+
+-- POSIX path of image file of props_rec
+
+--
+--set this_file to choose file without invisibles
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- perform the manipulation
+--		flip this_image with horizontal
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- perform action
+--		rotate this_image to angle 270
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- perform action
+--		scale this_image by factor 0.5
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+--set the target_length to 128
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- perform action
+--		scale this_image to size target_length
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+--set the target_length to 128
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- get dimensions of the image
+--		copy dimensions of this_image to {W, H}
+--		-- determine the shortest side and then
+--		-- calculate the new length for the longer side
+--		if W is less than H then
+--			set the scale_length to (H * target_length) / W
+--			set the scale_length to ¬
+--				round scale_length rounding as taught in school
+--		else
+--			set the scale_length to (W * target_length) / H
+--			set the scale_length to ¬
+--				round scale_length rounding as taught in school
+--		end if
+--		-- perform action
+--		scale this_image to size scale_length
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- perform action
+--		pad this_image to dimensions {640, 480}
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+---- indicate the proportions for the pad area
+--set H_proportion to 16
+--set V_proportion to 9
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- get dimensions of the image
+--		copy dimensions of this_image to {W, H}
+--		-- calculate pad dimensions
+--		if H_proportion is greater than V_proportion then
+--			set the new_W to (H * H_proportion) / V_proportion
+--			set pad_dimensions to {new_W, H}
+--		else
+--			set the new_H to (W * V_proportion) / H_proportion
+--			set pad_dimensions to {W, new_H}
+--		end if
+--		-- perform action
+--		pad this_image to dimensions pad_dimensions
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+---- indicate the final dimensions for the padded image
+--set target_W to 960
+--set target_H to 540
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- get dimensions of the image
+--		copy dimensions of this_image to {W, H}
+--		-- calculate pad dimensions
+--		if target_W is greater than target_H then
+--			set the new_W to (H * target_W) / target_H
+--			set pad_dimensions to {new_W, H}
+--			set the scale_dimension to target_W
+--		else
+--			set the new_H to (W * target_H) / target_W
+--			set pad_dimensions to {W, new_H}
+--			set the scale_dimension to target_H
+--		end if
+--		-- perform action
+--		pad this_image to dimensions pad_dimensions
+--		-- save the changes
+--		save this_image with icon
+--		-- perform action
+--		scale this_image to size scale_dimension
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+--
+--set this_file to choose file without invisibles
+---- indicate the final dimensions for the padded image
+--set target_W to 960
+--set target_H to 540
+--try
+--	tell application "Image Events"
+--		-- start the Image Events application
+--		launch
+--		-- open the image file
+--		set this_image to open this_file
+--		-- get dimensions of the image
+--		copy dimensions of this_image to {W, H}
+--		-- calculate scaling
+--		if target_W is greater than target_H then
+--			if W is greater than H then
+--				set the scale_length to (W * target_H) / H
+--				set the scale_length to ¬
+--					round scale_length rounding as taught in school
+--			else
+--				set the scale_length to target_H
+--			end if
+--		else if target_H is greater than target_W then
+--			if H is greater than W then
+--				set the scale_length to (H * target_W) / W
+--				set the scale_length to ¬
+--					round scale_length rounding as taught in school
+--			else
+--				set the scale_length to target_W
+--			end if
+--		else -- square pad area
+--			set the scale_length to target_H
+--		end if
+--		-- perform action
+--		scale this_image to size scale_length
+--		-- perform action
+--		pad this_image to dimensions {target_W, target_H}
+--		-- save the changes
+--		save this_image with icon
+--		-- purge the open image data
+--		close this_image
+--	end tell
+--on error error_message
+--	display dialog error_message
+--end try
+
+
+
+
+-- Chapter 23
+
+-- Chapter 24
+
+-- Chapter 25
+
+--
+
+
+
