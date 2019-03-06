@@ -69,7 +69,24 @@
 --end repeat
 --return counter
 
+--
+--set employees to {"Bob", "Ted", "Carol", "Alice"}
+--repeat with employee in employees
+--	set employee to contents of employee
+--	if employee is "Carol" then beep
+--end repeat
+--return employee
 
+--
+--set employees to {"Bob", "Ted", "Carol", "Alice"}
+--repeat with employee in employees
+--	set employee to contents of employee
+--	if employee is first item of employees then
+--		display dialog "First: " & employee
+--	else if employee is last item of employees then
+--		display dialog "Last: " & employee
+--	end if
+--end repeat
 
 
 
