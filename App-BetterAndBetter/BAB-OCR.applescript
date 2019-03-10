@@ -1,0 +1,1 @@
+-- BAB-OCRtell application "System Events"	do shell script "export PATH=/usr/local/bin/:$PATH;screencapture -i /tmp/bab_ocr.png;tesseract /tmp/bab_ocr.png stdout 2>&1"	tell application id "com.eusoft.eudic"		reopen		show dic with word "SelectedText"	end tellend tell
