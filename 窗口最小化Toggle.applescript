@@ -1,0 +1,1 @@
+tell application "System Events"	tell (first process whose frontmost is true)		set appName to displayed name		set appPath to ((path to frontmost application) as text)	end tell	tell application appName		if collapsed of the window is false then			set collapsed of the window to true		else			set collapsed of the window to false		end if	end tellend tell
