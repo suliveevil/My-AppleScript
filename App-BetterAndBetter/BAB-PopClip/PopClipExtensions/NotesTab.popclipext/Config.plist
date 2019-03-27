@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>notestab.png</string>
+			<key>Title</key>
+			<string>MiniNote Pro</string>
+			<key>URL</key>
+			<string>notestab://create/{popclip text}</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Bundle Identifier</key>
+			<string>com.fiplab.notestabpro</string>
+			<key>Check Installed</key>
+			<true/>
+			<key>Link</key>
+			<string>https://fiplab.com/apps/mininote-for-mac</string>
+			<key>Name</key>
+			<string>MiniNote Pro</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Create a new note in MiniNote Pro.</string>
+	<key>Extension Identifier</key>
+	<string>com.pilotmoon.popclip.extension.notestab</string>
+	<key>Extension Name</key>
+	<string>MiniNote Pro</string>
+	<key>Required Software Version</key>
+	<integer>693</integer>
+</dict>
+</plist>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>newtwitterbird.png</string>
+			<key>Regular Expression</key>
+			<string>(?s)^.{1,195}$</string>
+			<key>Shell Script File</key>
+			<string>tweet.sh</string>
+			<key>Title</key>
+			<string>YoruFukurou</string>
+		</dict>
+		<dict>
+			<key>Regular Expression</key>
+			<string>^@\w{1,20}$</string>
+			<key>Shell Script File</key>
+			<string>user.sh</string>
+			<key>Title</key>
+			<string>{popclip text}</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Bundle Identifier</key>
+			<string>com.YoruFukurouProject.YoruFukurou</string>
+			<key>Check Installed</key>
+			<true/>
+			<key>Link</key>
+			<string>https://itunes.apple.com/us/app/yorufukurou/id428834068?mt=12</string>
+			<key>Name</key>
+			<string>YoruFukurou</string>
+		</dict>
+	</array>
+	<key>Credits</key>
+	<array>
+		<dict>
+			<key>Link</key>
+			<string>http://hzlzh.io/</string>
+			<key>Name</key>
+			<string>hzlzh</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Compose a new tweet using YoruFukurou.</string>
+	<key>Extension Identifier</key>
+	<string>com.hzlzh.popclip.extension.yorufukurou</string>
+	<key>Extension Name</key>
+	<string>YoruFukurou</string>
+	<key>New item</key>
+	<string></string>
+	<key>Required Software Version</key>
+	<integer>693</integer>
+</dict>
+</plist>

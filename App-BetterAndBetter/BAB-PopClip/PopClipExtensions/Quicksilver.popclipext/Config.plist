@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>qs2.png</string>
+			<key>AppleScript File</key>
+			<string>qs.applescript</string>
+			<key>Title</key>
+			<string>Quicksilver</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Bundle Identifier</key>
+			<string>com.blacktree.Quicksilver</string>
+			<key>Check Installed</key>
+			<true/>
+			<key>Link</key>
+			<string>http://qsapp.com/</string>
+			<key>Name</key>
+			<string>Quicksilver</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Activate Quicksilver with the selected text.</string>
+	<key>Extension Identifier</key>
+	<string>com.pilotmoon.popclip.extension.quicksilver</string>
+	<key>Extension Name</key>
+	<string>Quicksilver</string>
+</dict>
+</plist>
