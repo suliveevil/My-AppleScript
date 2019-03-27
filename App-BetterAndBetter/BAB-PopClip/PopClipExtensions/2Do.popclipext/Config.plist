@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Image File</key>
+			<string>2do-v2.png</string>
+			<key>Service Name</key>
+			<string>2Do/New 2Do: Selection as Title</string>
+			<key>Title</key>
+			<string>2Do</string>
+		</dict>
+	</array>
+	<key>Apps</key>
+	<array>
+		<dict>
+			<key>Check Installed</key>
+			<true/>
+			<key>Bundle Identifiers</key>
+			<array>
+				<string>com.guidedways.TodoMac</string>
+				<string>com.guidedways.TodoMac-setapp</string>
+			</array>
+			<key>Link</key>
+			<string>http://www.2doapp.com/</string>
+			<key>Name</key>
+			<string>2Do</string>
+		</dict>
+	</array>
+	<key>Extension Description</key>
+	<string>Create a new to-do in 2Do.</string>
+	<key>Extension Identifier</key>
+	<string>com.pilotmoon.popclip.extension.2do</string>
+	<key>Extension Name</key>
+	<string>2Do</string>
+</dict>
+</plist>
