@@ -1,1 +1,1 @@
-tell application id "com.runningwithcrayons.Alfred-3" to search "SelectedText"
+tell application id "com.runningwithcrayons.Alfred" to search "SelectedText"
